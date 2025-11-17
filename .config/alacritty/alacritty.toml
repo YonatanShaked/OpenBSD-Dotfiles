@@ -1,0 +1,25 @@
+[font]
+size = 8.0
+
+[font.bold]
+family = "NotoSansMNerdFont"
+style = "Bold"
+
+[font.bold_italic]
+family = "NotoSansMNerdFont"
+style = "Bold Italic"
+
+[font.italic]
+family = "NotoSansMNerdFont"
+style = "Italic"
+
+[font.normal]
+family = "NotoSansMNerdFont"
+style = "Regular"
+
+[font.offset]
+x = 0
+y = 0
+
+[window]
+opacity = 0.8

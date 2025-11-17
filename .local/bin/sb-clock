@@ -1,0 +1,8 @@
+#!/bin/sh
+
+if [ "$1" = "-c" ] || [ "$1" = "--cal" ]; then  
+  notify-send "This Month" "$(cal | sed "s/\<$(date +'%e'|tr -d ' ')\>/<b><span color='red'>&<\/span><\/b>/")"
+  exit 0
+fi
+
+date '+%d/%m/%Y %H:%M'

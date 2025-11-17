@@ -1,0 +1,26 @@
+#!/bin/sh
+
+set -e
+DMENU_CMD="rofi -dmenu -i"
+CHOICES="English
+Hebrew"
+
+
+# Check if toggle flag is passed
+if [ "$1" = "-t" ] || [ "$1" = "--toggle" ]; then  
+  kb="$(setxkbmap -query | awk '/^layout:/ { print $2 }')" || exit 1
+  case "$kb" in
+    us) setxkbmap il ;;
+    il) setxkbmap us ;;
+    *) echo "Unknown layout: $kb" >&2; exit 1 ;;
+  esac
+  exit 0
+fi
+
+CHOICE=$(printf "$CHOICES" | $DMENU_CMD -p "Choose Layout")
+
+case $CHOICE in
+  English) setxkbmap us ;;
+  Hebrew) setxkbmap il ;;
+  *) exit 1 ;;
+esac

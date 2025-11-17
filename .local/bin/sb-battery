@@ -1,0 +1,14 @@
+#!/bin/sh
+#Prints battery percentage
+
+PERCENT=$(apm -l 2>/dev/null)
+
+ac=$(apm -a 2>/dev/null)
+case "$ac" in
+  1) AC="󰂄" ;;
+  0) AC="󰂀" ;;
+  *) AC="($ac)" ;;
+esac
+
+echo "$PERCENT% $AC"
+
