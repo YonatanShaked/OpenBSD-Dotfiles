@@ -20,6 +20,7 @@ bindsym $mod+F1 exec kbselect
 bindsym $mod+F2 exec webcam
 bindsym $mod+BackSpace exec powermenu
 bindsym $mod+q kill
+bindsym Print exec --no-startup-id screenshot
 
 #change focus
 bindsym $mod+h focus left

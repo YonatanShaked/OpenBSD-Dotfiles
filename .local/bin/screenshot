@@ -1,0 +1,13 @@
+#!/bin/sh
+
+outdir="$HOME/Pictures/Screenshots"
+mkdir -p "$outdir"
+
+filename="$(date +%Y-%m-%d_%H-%M-%S).png"
+output="$outdir/$filename"
+
+maim -s | xclip -selection clipboard -t image/png
+xclip -selection clipboard -o > "$output"
+
+notify-send "Screenshot" "Saved Screenshot to: $output"
+
