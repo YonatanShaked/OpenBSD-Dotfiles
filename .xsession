@@ -8,7 +8,7 @@ ulimit -Sc 0
 #wallpaper automation
 xwallpaper --zoom "$HOME/.local/share/wallpaper.jpg"
 
-xrdb /home/yoni/.config/x11/xresources & xrdbpid=$!
+xrdb $HOME/.config/x11/xresources & xrdbpid=$!
 
 #thinkpad bindings
 xinput set-prop "/dev/wsmouse" "Device Accel Constant Deceleration" 0.3
