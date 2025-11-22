@@ -28,5 +28,4 @@ dbus-uuidgen --ensure && dunst &
 apmd
 mpd &
 
-ck-launch-session i3
-
+ck-launch-session bspwm
