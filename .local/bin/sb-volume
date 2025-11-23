@@ -1,14 +1,15 @@
 #!/bin/sh
 
-_bsd() {
-	sndioctl -n output.level | sed 's/0\.//' | sed 's/.$/%/' | sed 's/\.//'
-}
+mic=""
+vol=$(sndioctl -n output.level | sed 's/0\.//' | sed 's/.$/%/' | sed 's/\.//')
 
-_linux() {
-	printf "$(pamixer --get-volume)%%\n"
-}
+if [ $(sndioctl -n input.mute) = "1" ]; then
+  mic=" "
+fi
 
-case $(uname) in
-	Linux) _linux ;;
-	*BSD) _bsd ;;
-esac
+if [ $(sndioctl -n output.mute) = "1" ]; then
+  vol="󰝟"
+fi
+
+echo "$vol$mic"
+

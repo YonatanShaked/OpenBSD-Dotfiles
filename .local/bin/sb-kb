@@ -3,3 +3,4 @@
 kb="$(setxkbmap -query | awk '/^layout:/ { print $2 }')" || exit 1
 
 echo "$kb"
+

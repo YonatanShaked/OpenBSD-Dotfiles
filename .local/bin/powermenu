@@ -12,10 +12,11 @@ CHOICE=$(printf "$CHOICES" | $DMENU_CMD -p "Action")
 ACTION=$(echo "$CHOICE" | awk '{print $NF}')
 
 case $ACTION in
-	Lock) i3lock ;;
-  Sleep) i3lock && apm -S ;;
-  Hibernate) i3lock && apm -Z ;;
+	Lock) slock ;;
+  Sleep) slock & apm -S ;;
+  Hibernate) slock & apm -Z ;;
 	Shutdown) shutdown -p now ;;
 	Reboot) shutdown -r now ;;
   *) exit 1 ;;
 esac
+
