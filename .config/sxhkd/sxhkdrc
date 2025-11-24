@@ -136,14 +136,14 @@ super + {Left,Down,Up,Right}
 # ThinkPad Media Keys
 ########################################
 
-XF86AudioRaiseVolume
-    sndioctl output.level=+0.1
+#XF86AudioRaiseVolume
+#    sndioctl output.level=+0.1
 
-XF86AudioLowerVolume
-    sndioctl output.level=-0.1
+#XF86AudioLowerVolume
+#    sndioctl output.level=-0.1
 
-XF86AudioMute
-    sndioctl output.mute=!
+#XF86AudioMute
+#    sndioctl output.mute=!
 
 XF86AudioMicMute
     sndioctl input.mute=!
