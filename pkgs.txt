@@ -3,7 +3,6 @@ Imath
 OpenEXR
 R
 abook
-accountsservice
 adwaita-icon-theme
 adwaita-icon-theme-legacy
 alacritty
@@ -44,7 +43,6 @@ coreutils
 cowsay
 curl
 cvsps
-dash
 dbus
 dbus-intf
 dbus-tcl
@@ -67,7 +65,6 @@ feh
 ffmpeg
 figlet
 firefox
-fish%main
 flac
 fluidsynth
 font-awesome
@@ -203,7 +200,6 @@ neofetch
 neomuttgpgme-notmuch-sasl
 neovim
 newsboat
-nitrogen
 nlohmann-json
 nomacs
 notmuch
@@ -235,8 +231,6 @@ picom
 pinentry
 pkg_mgr
 polkit
-polkit-qt5
-polkit-qt6
 polybar
 poppler
 poppler-qt5
@@ -247,7 +241,6 @@ poxml
 profont-nerd-fonts
 psutils
 pulseaudio
-pulseaudio-qt
 py-gtk2
 py3-MarkupSafe
 py3-beaker
@@ -289,7 +282,6 @@ qca-qt6
 qcoro
 qemu
 qscintilla
-qt5ct
 qt6-mysql
 qt6-postgresql
 qt6-qt5compat
@@ -395,7 +387,6 @@ unzip
 updatedb
 upower
 usbutils
-vimgtk3-perl-python3-ruby
 vlc
 vte3
 vulkan-headers
@@ -410,7 +401,6 @@ xcape
 xcb
 xclip
 xcolor
-xdg-desktop-portal
 xdg-user-dirs
 xdg-utils
 xdotool

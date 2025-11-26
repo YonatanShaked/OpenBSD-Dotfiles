@@ -28,7 +28,6 @@ alias \
 # Colorize commands when possible.
 alias \
 	ls="gls -hN --color=auto --group-directories-first" \
-	diff="diff --color=auto" \
 	ccat="highlight --out-format=ansi" \
 	ip="ip -color=auto"
 
