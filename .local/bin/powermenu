@@ -13,8 +13,8 @@ ACTION=$(echo "$CHOICE" | awk '{print $NF}')
 
 case $ACTION in
 	Lock) slock ;;
-  Sleep) slock & apm -S ;;
-  Hibernate) slock & apm -Z ;;
+  Sleep) slock & zzz ;;
+  Hibernate) slock & ZZZ ;;
 	Shutdown) shutdown -p now ;;
 	Reboot) shutdown -r now ;;
   *) exit 1 ;;

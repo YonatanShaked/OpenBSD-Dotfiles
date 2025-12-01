@@ -3,8 +3,11 @@ Imath
 OpenEXR
 R
 abook
+adwaita-fonts
 adwaita-icon-theme
 adwaita-icon-theme-legacy
+adwaita-qt
+adwaita-qt6
 alacritty
 alembic
 analitza
@@ -35,7 +38,6 @@ cmake-core
 cmake-man
 cmatrix
 cmixer
-cmus
 codenewroman-nerd-fonts
 colorls
 consolekit2
@@ -131,7 +133,6 @@ harfbuzz-icu
 hdf5
 htop
 hugo
-ibus
 icon-xlib
 jetbrains-mono
 jq
@@ -147,6 +148,7 @@ lib2geom
 libQuotient
 libaccounts-glib
 libaccounts-qt
+libadwaita
 libass
 libdbusmenu
 libgdiplus
@@ -216,6 +218,7 @@ p5-Config-AutoConf
 p5-Curses
 p5-Curses-UI
 p5-Locale-Hebrew
+p7zip
 pango
 pangomm
 papirus-icon-theme
@@ -282,6 +285,7 @@ qca-qt6
 qcoro
 qemu
 qscintilla
+qt5ct
 qt6-mysql
 qt6-postgresql
 qt6-qt5compat
@@ -308,6 +312,7 @@ qt6-qtwebengine
 qt6-qtwebsockets
 qt6-qtwebview
 qt6-qxlsx
+qt6ct
 qtadvanceddocking
 qtbase
 qtdatavis3d
@@ -383,6 +388,7 @@ ubuntu-nerd-fonts
 ubuntumono-nerd-fonts
 unclutter
 unifont
+unrar
 unzip
 updatedb
 upower
@@ -397,6 +403,7 @@ webkitgtk40
 wifind
 wireguard-tools
 wxWidgets-gtk3
+xarchiver
 xcape
 xcb
 xclip

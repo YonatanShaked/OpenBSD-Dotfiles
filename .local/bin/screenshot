@@ -6,8 +6,14 @@ mkdir -p "$outdir"
 filename="$(date +%Y-%m-%d_%H-%M-%S).png"
 output="$outdir/$filename"
 
-maim -s | xclip -selection clipboard -t image/png
-xclip -selection clipboard -o > "$output"
+tmpfile=$(mktemp /tmp/maim-XXXXXX.png)
 
-notify-send "Screenshot" "Saved Screenshot to: $output"
+if maim -s "$tmpfile"; then
+    xclip -selection clipboard -t image/png "$tmpfile"
+    mv "$tmpfile" "$output"
+    notify-send "Screenshot" "Saved Screenshot to: $output"
+else
+    rm -f "$tmpfile"
+    exit 1
+fi
 
